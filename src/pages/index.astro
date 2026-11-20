@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+
+---
+<Layout title="Una estación para todos: estudiantes proponen mejorar la accesibilidad de Banfield | Divercity">
+  <Header />
+  <main id="nota" class="mx-auto grid max-w-[80rem] gap-12 px-5 pb-24 pt-6 lg:grid-cols-[minmax(0,1fr)_19rem] lg:px-10">
+    <article class="art min-w-0">
+      <nav aria-label="Ubicación" class="border-b border-neutral-200 pb-3 text-neutral-500">
+        Divercity <span aria-hidden="true">›</span> Proyecto social
+      </nav>
+
+      <p class="mt-4 text-base font-extrabold uppercase tracking-wide text-gold-dark">Proyecto Divercity: accesibilidad para todos</p>
+      <h1 class="mt-3 text-4xl font-extrabold leading-[1.1] text-neutral-900 sm:text-5xl">
+        Una estación para todos: estudiantes proponen mejorar la accesibilidad de Banfield
+      </h1>
+      <p class="mt-4 text-xl leading-relaxed text-neutral-700">
+        Dos estudiantes de 6.º año del Instituto Ricardo Güiraldes desarrollaron en el marco de la materia Proyecto Organizacional, una propuesta social vial destinada a mejorar las condiciones de accesibilidad de la estación ferroviaria de Banfield.
+      </p>
+
+      <figure class="!mb-0 !mt-6">
+        <img src="/img/colegio.jpg" alt="Estudiantes de 6.º año del Instituto Ricardo Güiraldes" class="aspect-[16/10] w-full object-cover" />
+        <figcaption>Estudiantes de 6.º año del Instituto Ricardo Güiraldes, autores del proyecto.</figcaption>
+      </figure>
+
+      
+
+      <p class="!mt-8">Nos cuentan que la iniciativa surge a partir de una problemática que afecta diariamente a muchas personas: las dificultades para usar el transporte público cuando existen barreras arquitectónicas que impiden y/o dificultan el desplazamiento autónomo.</p>
+      <p>Las personas que utilizan sillas de ruedas, adultos mayores y pasajeros con movilidad reducida se encuentran con distintos obstáculos al momento de ingresar, circular y trasladarse entre los andenes de la estación.</p>
+      <p>Frente a esta situación, los estudiantes elaboraron una propuesta de intervención la cuál se basa en la incorporación de ascensores en los andenes, escaleras mecánicas en el túnel o subnivel, barandas metálicas de apoyo y rampas de acceso.</p>
+
+      <figure>
+        <img src="/img/hero.jpg" alt="Acceso al paso bajo nivel de la Estación de Banfield con ascensor accesible" class="max-h-[32rem] w-full object-cover" />
+        <figcaption>Imagen del proyecto: acceso al paso bajo nivel de la estación con ascensor.</figcaption>
+      </figure>
+
+      <p>Para desarrollar estas ideas, tomaron como inspiración algunas de las instalaciones de accesibilidad presentes en las estaciones del subte de Buenos Aires, buscando adaptar soluciones similares a las necesidades de la estación de Banfield.</p>
+      <p>La incorporación de ascensores permitiría facilitar el acceso a los andenes de las personas que utilizan sillas de ruedas, mientras que las escaleras mecánicas ayudarían a agilizar el desplazamiento entre los diferentes niveles. Por otro lado, las barandas y rampas brindarían mayor seguridad y autonomía a quienes presentan dificultades para caminar o subir escalones.</p>
+
+      <figure id="antes-despues">
+        <img src="/img/antes-despues.png" alt="Paso bajo nivel de la estación, antes y después de la intervención propuesta" class="w-full" />
+        <figcaption>Imagen del proyecto: el paso bajo nivel de la estación, antes (izquierda) y después (derecha) de la intervención propuesta.</figcaption>
+      </figure>
+
+      <p>El objetivo principal del proyecto es promover un espacio de transporte más inclusivo, donde las condiciones físicas de cada persona no representen una limitación para trasladarse. Además, busca generar conciencia sobre la importancia de garantizar la accesibilidad en los espacios públicos.</p>
+      <p>Desde la materia Proyecto Organizacional, los estudiantes buscan demostrar que es posible identificar una problemática de la comunidad y desarrollar propuestas concretas para mejorarla.</p>
+      <blockquote>Porque el acceso al transporte público debe ser un derecho para todos, sin importar las condiciones de movilidad de cada persona.</blockquote>
+
+      <section id="equipo" class="mt-12 border-t border-neutral-200 pt-6">
+        <h3 class="!mt-0">Sobre Divercity</h3>
+        <p class="!text-base">Divercity es el proyecto de la empresa escolar Healpy S.A., integrada por Valentina Díaz y Brandon Coronel, estudiantes de 6.º año de Economía y Administración del Instituto Ricardo Güiraldes, con la guía de la profesora Stella Maris López.</p>
+        <p class="!text-sm text-neutral-500">El logo del proyecto se diseñó con ayuda de inteligencia artificial.</p>
+      </section>
+    </article>
+
+    <aside class="hidden lg:block">
+      <div class="sticky top-24 border-t-4 border-gold bg-cream p-6">
+        <p class="text-lg font-extrabold text-navy">Ficha del proyecto</p>
+        <dl class="mt-4 space-y-4 text-sm">
+          <div><dt class="text-neutral-500">Lugar</dt><dd class="font-semibold">Estación de Banfield</dd></div>
+          <div><dt class="text-neutral-500">Materia</dt><dd class="font-semibold">Proyecto Organizacional</dd></div>
+          <div><dt class="text-neutral-500">Empresa</dt><dd class="font-semibold">Healpy S.A.</dd></div>
+          <div><dt class="text-neutral-500">Propuesta</dt><dd class="font-semibold">Ascensores, escaleras mecánicas, barandas y rampas</dd></div>
+          <div><dt class="text-neutral-500">Institución</dt><dd class="font-semibold">Instituto Ricardo Güiraldes</dd></div>
+          <div><dt class="text-neutral-500">Profesora</dt><dd class="font-semibold">Stella Maris López</dd></div>
+        </dl>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="bg-navy py-8 text-center text-sm text-white/80">
+    <p>Divercity · Accesibilidad para todos · Healpy S.A.</p>
+  </footer>
+
+
+</Layout>
