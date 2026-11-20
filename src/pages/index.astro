@@ -1,4 +1,5 @@
 ---
+import { asset } from '../lib/url.js';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 
@@ -21,18 +22,18 @@ import Header from '../components/Header.astro';
       </p>
 
       <figure class="!mb-0 !mt-6">
-        <img src="/img/colegio.jpg" alt="Estudiantes de 6.º año del Instituto Ricardo Güiraldes" class="aspect-[16/10] w-full object-cover" />
+        <img src={asset('/img/colegio.jpg')} alt="Estudiantes de 6.º año del Instituto Ricardo Güiraldes" class="aspect-[16/10] w-full object-cover" />
         <figcaption>Estudiantes de 6.º año del Instituto Ricardo Güiraldes, autores del proyecto.</figcaption>
       </figure>
 
-      
+
 
       <p class="!mt-8">Nos cuentan que la iniciativa surge a partir de una problemática que afecta diariamente a muchas personas: las dificultades para usar el transporte público cuando existen barreras arquitectónicas que impiden y/o dificultan el desplazamiento autónomo.</p>
       <p>Las personas que utilizan sillas de ruedas, adultos mayores y pasajeros con movilidad reducida se encuentran con distintos obstáculos al momento de ingresar, circular y trasladarse entre los andenes de la estación.</p>
       <p>Frente a esta situación, los estudiantes elaboraron una propuesta de intervención la cuál se basa en la incorporación de ascensores en los andenes, escaleras mecánicas en el túnel o subnivel, barandas metálicas de apoyo y rampas de acceso.</p>
 
       <figure>
-        <img src="/img/hero.jpg" alt="Acceso al paso bajo nivel de la Estación de Banfield con ascensor accesible" class="max-h-[32rem] w-full object-cover" />
+        <img src={asset('/img/hero.jpg')} alt="Acceso al paso bajo nivel de la Estación de Banfield con ascensor accesible" class="max-h-[32rem] w-full object-cover" />
         <figcaption>Imagen del proyecto: acceso al paso bajo nivel de la estación con ascensor.</figcaption>
       </figure>
 
@@ -40,7 +41,7 @@ import Header from '../components/Header.astro';
       <p>La incorporación de ascensores permitiría facilitar el acceso a los andenes de las personas que utilizan sillas de ruedas, mientras que las escaleras mecánicas ayudarían a agilizar el desplazamiento entre los diferentes niveles. Por otro lado, las barandas y rampas brindarían mayor seguridad y autonomía a quienes presentan dificultades para caminar o subir escalones.</p>
 
       <figure id="antes-despues">
-        <img src="/img/antes-despues.png" alt="Paso bajo nivel de la estación, antes y después de la intervención propuesta" class="w-full" />
+        <img src={asset('/img/antes-despues.png')} alt="Paso bajo nivel de la estación, antes y después de la intervención propuesta" class="w-full" />
         <figcaption>Imagen del proyecto: el paso bajo nivel de la estación, antes (izquierda) y después (derecha) de la intervención propuesta.</figcaption>
       </figure>
 

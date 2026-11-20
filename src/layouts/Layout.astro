@@ -1,4 +1,5 @@
 ---
+import { asset } from '../lib/url.js';
 import '../styles/global.css';
 const { title = 'Divercity | Accesibilidad para todos' } = Astro.props;
 ---
@@ -8,9 +9,9 @@ const { title = 'Divercity | Accesibilidad para todos' } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Divercity: proyecto de accesibilidad urbana y vial en la Estación de Banfield." />
-    <link rel="icon" href="/favicon.ico" sizes="48x48" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href={asset('/favicon.ico')} sizes="48x48" />
+    <link rel="icon" href={asset('/favicon.png')} type="image/png" />
+    <link rel="apple-touch-icon" href={asset('/apple-touch-icon.png')} />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
